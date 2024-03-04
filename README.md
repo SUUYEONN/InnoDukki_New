@@ -1,2 +1,2 @@
 ### InnoDukki
-An User-Friendly Kiosk System Based on Deep Learning
+## An User-Friendly Kiosk System Based on Deep Learning
