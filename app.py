@@ -1,4 +1,3 @@
-# 2023-09-12 final code
 from flask import Flask, escape, request, render_template, url_for, redirect, current_app, jsonify, g
 from flaskext.mysql import MySQL
 from werkzeug.utils import secure_filename
@@ -58,7 +57,7 @@ def run_start():
 def run_mediapipe():
     global result
     
-    model = load_model('./jetson_mediapipe_model_100epc.h5')
+    model = load_model('./mediapipe_model.h5')
 
     actions = ['elder', 'adult', 'child']
     seq_length = 30
@@ -310,7 +309,7 @@ def run_voice():
 
     global result
    
-    model = load_model("./lstm_voice_jetson.h5")
+    model = load_model("./voice_model.h5")
     label_map = {0: 'elder', 1: 'child', 2: 'adult'}  
 
 
